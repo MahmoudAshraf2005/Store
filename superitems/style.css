@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box!important;
+}
+body{
+    direction: rtl;
+    background-color: #101418;
+}
+.navbar{
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #232d22;
+    align-items: center;
+}
+nav .brand{
+    color: #30c322;
+    font-weight: 700;
+    font-size: 25px;
+}
+.nav-link{
+    text-decoration: none!important;
+    color: white!important;
+    margin-left: 30px;
+}
+a{
+    border-radius: 6px;
+}
+.up{
+    display: none;
+}
+.active{
+    color: black!important;
+    background-color: #30c322;
+}
+header a:not(.active):hover {
+    color: #30c322!important;
+    background: rgba(255, 255, 255, 0.1);
+}
+.navbar-toggler{
+    border: 1px solid #30c322!important;
+    outline: none!important;
+    color: rgba(0, 0, 0, 0)!important;
+}
+svg{
+    color: #30c322;
+}
+@media screen and (max-width: 992px) {
+    .navbar{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .nav-link{
+        padding: 8px 12px;
+        margin-top: 4px;
+    }
+    .navbar-nav{
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    .down{
+        display: none;
+    }
+    .up{
+        display: flex;
+    }
+    .navbar{
+        direction: ltr;
+    }
+}
+@media screen and (max-width:600px) { 
+    .navbar{
+        padding: 0!important;
+    }
+}
+.h0{
+    font-size: 50px!important;
+}
+.price{
+    color: #30c322;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    height: 100px;
+    width: 40%;
+}
+.box{
+    border: 1px solid #30c322;
+    border-radius: 8px;
+}
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .col-lg-3:nth-child(4)
+    {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:576px) {
+    .col-lg-3:nth-child(4)
+    {
+        margin-top: 15px;
+    }
+    .col-lg-3:nth-child(3)
+    {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:576px) {
+    .col-lg-3:nth-child(4)
+    {
+        margin-top: 15px;
+    }
+    .col-lg-3:nth-child(3)
+    {
+        margin-top: 15px;
+    }
+    .col-lg-3:nth-child(2)
+    {
+        margin-top: 15px;
+    }
+}
+.box{
+    transition: 0.3s;
+}
+.box:hover{
+    transform: scale(1.05);
+}
