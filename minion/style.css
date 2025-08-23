@@ -183,3 +183,7 @@ footer{
 .box:hover{
     transform: scale(1.05);
 }
+.price{
+    color: #30c322!important;
+    font-size: 26px!important;
+}
